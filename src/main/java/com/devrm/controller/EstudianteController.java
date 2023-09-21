@@ -38,7 +38,7 @@ public class EstudianteController {
 		upestudiante.get().setApellido(estudiante.getApellido());
 		upestudiante.get().setDni(estudiante.getDni());
 		
-		return ResponseEntity.status(HttpStatus.CREATED).body(estudianteService.save(estudiante));
+		return ResponseEntity.status(HttpStatus.CREATED).body(estudianteService.save(upestudiante.get()));
 		
 	}
 	
